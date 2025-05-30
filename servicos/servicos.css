@@ -1,0 +1,138 @@
+.servicos-container {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff5f8 0%, #ffe4f0 100%);
+}
+
+.servicos-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 3rem;
+}
+
+.servicos-hero h1 {
+    color: #ff69b4;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.servicos-hero p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.servico-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servico-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.15);
+}
+
+.servico-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.servico-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.servico-card h2 {
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.servico-detalhes {
+    text-align: center;
+}
+
+.servico-detalhes p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.servico-detalhes ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.servico-detalhes li {
+    color: #555;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.servico-detalhes li:last-child {
+    border-bottom: none;
+}
+
+.agendar-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agendar-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .servicos-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .servicos-grid {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .servico-card {
+        padding: 1.5rem;
+    }
+
+    .servico-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .servico-icon i {
+        font-size: 1.5rem;
+    }
+} 

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Beauty Care</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-text">
+                    <span class="logo-initials">BC</span>
+                    <h1>Beauty Care</h1>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="../servicos/index.html"><i class="fas fa-spa"></i><span>Serviços</span></a></li>
+                <li><a href="../sobre/index.html"><i class="fas fa-info-circle"></i><span>Sobre</span></a></li>
+                <li><a href="index.html"><i class="fas fa-images"></i><span>Galeria</span></a></li>
+                <li><a href="../index.html#contato"><i class="fas fa-envelope"></i><span>Contato</span></a></li>
+            </ul>
+            <div class="mobile-menu">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-hero">
+            <h1>Nossa Galeria</h1>
+            <p>Conheça nossos trabalhos e transformações</p>
+        </section>
+
+        <section class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="cortes">Cortes</button>
+            <button class="filter-btn" data-filter="coloring">Coloração</button>
+            <button class="filter-btn" data-filter="treatments">Tratamentos</button>
+            <button class="filter-btn" data-filter="makeup">Maquiagem</button>
+        </section>
+
+        <section class="gallery-grid">
+            <!-- Cortes -->
+            <div class="gallery-item" data-category="cortes">
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Corte moderno">
+                <div class="gallery-overlay">
+                    <h3>Corte Moderno</h3>
+                    <p>Transformação completa</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cortes">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Corte masculino">
+                <div class="gallery-overlay">
+                    <h3>Corte Masculino</h3>
+                    <p>Estilo contemporâneo</p>
+                </div>
+            </div>
+
+            <!-- Coloração -->
+            <div class="gallery-item" data-category="coloring">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Coloração profissional">
+                <div class="gallery-overlay">
+                    <h3>Coloração Profissional</h3>
+                    <p>Mechas e reflexos</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="coloring">
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Coloração fashion">
+                <div class="gallery-overlay">
+                    <h3>Coloração Fashion</h3>
+                    <p>Tendências atuais</p>
+                </div>
+            </div>
+
+            <!-- Tratamentos -->
+            <div class="gallery-item" data-category="treatments">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Tratamento capilar">
+                <div class="gallery-overlay">
+                    <h3>Tratamento Capilar</h3>
+                    <p>Hidratação profunda</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="treatments">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Reconstrução">
+                <div class="gallery-overlay">
+                    <h3>Reconstrução</h3>
+                    <p>Recuperação dos fios</p>
+                </div>
+            </div>
+
+            <!-- Maquiagem -->
+            <div class="gallery-item" data-category="makeup">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Maquiagem social">
+                <div class="gallery-overlay">
+                    <h3>Maquiagem Social</h3>
+                    <p>Look natural</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="makeup">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Maquiagem festa">
+                <div class="gallery-overlay">
+                    <h3>Maquiagem Festa</h3>
+                    <p>Look glamouroso</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>O Beauty Care é um salão de beleza moderno e acolhedor, dedicado a proporcionar experiências únicas de beleza e bem-estar para nossos clientes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Example, 123</p>
+                <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> contato@beautycare.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <p><i class="far fa-clock"></i> Segunda a Sexta: 9h às 20h</p>
+                <p><i class="far fa-clock"></i> Sábado: 9h às 18h</p>
+                <p><i class="far fa-clock"></i> Domingo: Fechado</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/beautycare" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/beautycare" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/551112345678" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://tiktok.com/@beautycare" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i class="far fa-copyright"></i> 2024 Beauty Care. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <button id="back-to-top" aria-label="Retornar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="../script.js"></script>
+    <script src="galeria.js"></script>
+</body>
+</html> 
